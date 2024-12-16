@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    background-image: url(/img/free/form-full-bg-sales.jpg); 
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    flex: 1;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    background:transparent;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.content-container, .form-container {
+    padding: 20px;
+}
+
+.content-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-container img {
+    width: 50px;
+}
+
+.form-container {
+    width: 530px;
+    background-color: #f7f7f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.features-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.features-list li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #28a745;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="checkbox"] {
+    width: auto;
+}
+
+.form-container button {
+    background-color: #0070d2;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-container,
+    .form-container {
+        width: 100%;
+    }
+}
+
+.footer-bottom {
+    background-color: #1c3b78;
+    color: #fff;
+    padding-top: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

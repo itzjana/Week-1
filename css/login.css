@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f7;
+}
+
+.split-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f7;
+    position: relative;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 300;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0070d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.login-box button:hover {
+    background-color: #005bb5;
+}
+
+.remember-me {
+    width:130px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.remember-me input {
+    width: 21px;
+    margin-top:9px;
+}
+
+.remember-me label {
+    font-weight: 300;
+    width: 100px;
+}
+
+.login-box a {
+    color: #0070d2;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.below-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.below-login a {
+    color: #0070d2;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.below-login button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #0070d2;
+    color: #0070d2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.below-login button:hover {
+    background-color: #0070d2;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+.footer a {
+    color: #0070d2;
+    text-decoration: none;
+}
+
+.right-container {
+    width: 50%;
+    position: relative;
+    background-color: white;
+    background-image: url('../img/login/prospect-login-promo-apac.png');
+    background-size: 699px 850px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h1 {
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: left;
+    max-width: 300px;
+    word-break: break-word;
+    font-weight: bold;
+}
+
+.crm-info p {
+    font-size: 20px;
+    font-family: monospace;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.watch-demo {
+    padding: 12px 25px;
+    background-color: #032d60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.free-trial {
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid #032d60;
+    color: #032d60;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.watch-demo:hover {
+    background-color: #001f40;
+}
+
+.free-trial:hover {
+    background-color: #032d60;
+    color: white;
+}
